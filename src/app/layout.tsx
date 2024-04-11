@@ -16,9 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex`}>
-      <SideMenu />
-      {children}
+      <body className={`${inter.className} flex min-w-[1200px]`}>
+        <SideMenu />
+        {children}
       </body>
     </html>
   );

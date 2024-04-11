@@ -1,7 +1,7 @@
 import {LucideIcon} from "lucide-react";
 
 export interface SideMenuTypes {
-  label : String,
+  label : string,
   icon  : LucideIcon,
-  to    : String,
+  to    : string,
 }

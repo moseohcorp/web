@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SideMenu from "@/components/ui/sideMenu";
+import ClientApplication from "@/app/client/ClientApplication";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} flex min-w-[1200px]`}>
         <SideMenu />
-        {children}
+        <ClientApplication>
+          {children}
+        </ClientApplication>
       </body>
     </html>
   );
